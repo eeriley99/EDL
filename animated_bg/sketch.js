@@ -7,7 +7,7 @@ var canvas;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
-  frameRate(1);
+  frameRate(7);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
 }
