@@ -43,7 +43,7 @@ function starsFall(num_stars) {
     let r = random(0, 255);
     let b = random(0, 255);
     let g = random(0, 255);
-    star(x, y, 3, 7, 5);
+    star(x, y, 3, 7, 6);
     fill(r, g, b);
   }
 }
