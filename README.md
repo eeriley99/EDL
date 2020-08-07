@@ -2,7 +2,7 @@
 
 EDL HOME
 
-https://eeriley99.github.io/EDL/EDL_home/index
+https://eeriley99.github.io/EDL/EDL_home/
 
 EDL projects
 
