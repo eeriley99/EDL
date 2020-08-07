@@ -8,7 +8,6 @@ canvas {
     display: block;
 }
 
-/*
 h1 {
     color: black;
     position: absolute;
@@ -30,4 +29,23 @@ h2 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 40px;
 }
-*/
+
+
+td {
+    border: 1px;
+    padding: 20px;
+}
+
+#t01 {
+    border-spacing: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#t02 {
+    border-spacing: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}

@@ -8,12 +8,12 @@ let newMY = 0;
 
 var compgif_loadImg, compgif_createImg;
 var mbitgif_loadImg, mbitgif_createImg;
-var soldgif_loadImg, soldgif_createImg;
+//var soldgif_loadImg, soldgif_createImg;
 
 function preload() {
     compgif_createImg = createImg("computer.gif");
     mbitgif_createImg = createImg("microbit.gif");
-    soldgif_createImg = createImg("solder.gif");
+    // soldgif_createImg = createImg("solder.gif");
 }
 
 function setup() {
@@ -24,9 +24,9 @@ function setup() {
     y2 = displayHeight * 0.75;
 
 
-    compgif_createImg.position(width / 2, height / 2);
-    mbitgif_createImg.position(width / 2, height / 2);
-    soldgif_createImg.position(width / 2, height / 2);
+    //  compgif_createImg.position(width / 2, height / 2);
+    // mbitgif_createImg.position(width / 2, height / 2);
+    // soldgif_createImg.position(width / 2, height / 2);
 
     frameRate(10);
 }
@@ -46,15 +46,16 @@ function draw() {
         mbitgif_createImg.position(currentMX, currentMY);
 
     } else if ((mouseX >= x2 && mouseX <= displayWidth) && (mouseY >= y1 && mouseY <= y2)) {
-
-        soldgif_createImg.position(currentMX, currentMY);
+        compgif_createImg.position(100, 25);
+        mbitgif_createImg.position(100, 200);
+        // soldgif_createImg.position(currentMX, currentMY);
 
     } else if
 
     ((mouseX >= 0 && mouseX <= displayWidth) && (mouseY >= y2 && mouseY <= displayHeight)) {
         compgif_createImg.position(100, 25);
         mbitgif_createImg.position(100, 200);
-        soldgif_createImg.position(100, 300);
+        // soldgif_createImg.position(100, 300);
     }
 
     //store mouse values
