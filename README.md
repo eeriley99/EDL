@@ -1,4 +1,9 @@
 # EDL
+
+EDL HOME
+
+https://eeriley99.github.io/EDL/EDL_home/index
+
 EDL projects
 
 Covid 19 projects: https://eeriley99.github.io/EDL/CovidProjects/index.html
