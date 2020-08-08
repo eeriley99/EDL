@@ -2,7 +2,7 @@
 
 EDL HOME
 
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+[Contribution guidelines for this project](/EDL/EDL_home.md)
 
 https://eeriley99.github.io/EDL/EDL_home/
 
