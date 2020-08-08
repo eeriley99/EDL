@@ -1,65 +1,58 @@
-let x = 0;
-let y = 0;
-
-let currentMX = 0;
-let newMX = 0;
-let currentMY = 0;
-let newMY = 0;
+//data
+let x, y, a, b, l, m;
+let Wander;
 
 var compgif_loadImg, compgif_createImg;
-var mbitgif_loadImg, mbitgif_createImg;
-//var soldgif_loadImg, soldgif_createImg;
+var filamentgif_loadImg, filamentgif_createImg;
+var microbitgif_loadImg, microbitgif_createImg;
 
 function preload() {
     compgif_createImg = createImg("computer.gif");
-    mbitgif_createImg = createImg("microbit.gif");
-    // soldgif_createImg = createImg("solder.gif");
+    filamentgif_createImg = createImg("filament.gif");
+    microbitgif_createImg = createImg("microbit.gif");
 }
 
 function setup() {
     createCanvas(displayWidth, displayHeight);
-    x1 = displayWidth / 4;
-    x2 = displayWidth * 0.75;
-    y1 = displayHeight / 4;
-    y2 = displayHeight * 0.75;
-
-
-    //  compgif_createImg.position(width / 2, height / 2);
-    // mbitgif_createImg.position(width / 2, height / 2);
-    // soldgif_createImg.position(width / 2, height / 2);
-
-    frameRate(10);
+    Wander = new Wand();
+    frameRate(200);
 }
 
 function draw() {
+    Wander.step();
+    Wander.display();
+}
 
-    //mouse position
-    currentMX = mouseX;
-    currentMY = mouseY;
+//Wander class
+class Wand {
+    //location
+    constructor() {
+        x = 10;
+        y = 10;
+        a = 0;
+        b = 300;
+        l = 300;
+        m = 600;
+    }
+    //display
+    display() {
+        //action (step)
+        compgif_createImg.position(x, y);
+        microbitgif_createImg.position(l, m);
+        filamentgif_createImg.position(a, b);
 
-    if ((mouseX >= 0 && mouseX <= displayWidth) && (mouseY >= 0 && mouseY <= y1)) {
-
-        compgif_createImg.position(currentMX, currentMY);
-
-    } else if ((mouseX >= 0 && mouseX <= x1) && (mouseY >= y1 && mouseY <= y2)) {
-
-        mbitgif_createImg.position(currentMX, currentMY);
-
-    } else if ((mouseX >= x2 && mouseX <= displayWidth) && (mouseY >= y1 && mouseY <= y2)) {
-        compgif_createImg.position(100, 25);
-        mbitgif_createImg.position(100, 200);
-        // soldgif_createImg.position(currentMX, currentMY);
-
-    } else if
-
-    ((mouseX >= 0 && mouseX <= displayWidth) && (mouseY >= y2 && mouseY <= displayHeight)) {
-        compgif_createImg.position(100, 25);
-        mbitgif_createImg.position(100, 200);
-        // soldgif_createImg.position(100, 300);
     }
 
-    //store mouse values
-    newMX = currentMX;
-    newMY = currentMY;
-
+    step() {
+        let choice = int(random(4));
+        if (choice == 0) {
+            x++, a++, l--;
+        } else if (choice == 1) {
+            x--, a--, l++;
+        } else if (choice == 2) {
+            y++, b--, m++;
+        } else {
+            y--, b++, m--;
+        }
+    }
 }
