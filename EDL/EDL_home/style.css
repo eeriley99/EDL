@@ -29,11 +29,15 @@ h2 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 40px;
 }
-
+           
+h3 {
+    font-family: roboto condensed, sans-serif;
+    padding: 5px;
+            }
 
 td {
     border: 1px;
-    padding: 20px;
+    padding: 15px;
 }
 
 #t01 {
@@ -44,15 +48,22 @@ td {
 }
 
 #t02 {
-    border-spacing: 15px;
+    border-spacing: 5px;
     margin-left: auto;
     margin-right: auto;
     width: 10%;
 }
 
 #t03 {
-    border-spacing: 15px;
+    border-spacing: 1px;
     margin-left: auto;
     margin-right: auto;
     width: 10%;
+}
+
+#t04 {
+    border-spacing: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
