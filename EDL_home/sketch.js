@@ -28,7 +28,7 @@ class Wand {
     //location
     constructor() {
         x = 10;
-        y = 200;
+        y = 100;
         a = 0;
         b = 300;
         l = 300;
