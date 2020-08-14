@@ -46,13 +46,13 @@ class Wand {
     step() {
         let choice = int(random(4));
         if (choice == 0) {
-            x++, a++, l--;
+            x, a++, l--;
         } else if (choice == 1) {
-            x--, a--, l++;
+            x, a--, l++;
         } else if (choice == 2) {
-            y++, b--, m++;
+            y, b--, m++;
         } else {
-            y--, b++, m--;
+            y, b++, m--;
         }
     }
 }
