@@ -7,7 +7,7 @@ let offsetwH = wH * 0.7;
 
 function setup() {
     createCanvas(wW, wH);
-    cursor('https://eeriley99.github.io/icons/spray_can.gif');
+    cursor('https://eeriley99.github.io/code_sketchbook/icons-master/spray_can.gif');
 }
 
 function draw() {
