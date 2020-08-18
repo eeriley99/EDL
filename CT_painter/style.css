@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html,
+body {
+    margin: 20;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+}
+
+h3 {
+    color: black;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 24px;
+}
+
+h4 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
